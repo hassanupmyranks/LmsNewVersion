@@ -1,0 +1,21 @@
+    .react-datepicker-wrapper{
+        width: 210px !important;
+        padding: 10px !important;
+        z-index: 111111;
+        border-radius: 20px;
+        border: 1px solid #E0E5F2 !important;
+        cursor: pointer;
+
+    }
+
+    .react-datepicker-wrapper input{
+        border: 0;
+        outline:0;
+        color: #2B3674;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .react-datepicker-popper{
+        z-index: 111111 !important;
+    }

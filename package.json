@@ -1,0 +1,153 @@
+{
+  "name": "edu",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.1.19",
+    "@fullcalendar/core": "^6.1.5",
+    "@fullcalendar/daygrid": "^6.1.5",
+    "@fullcalendar/interaction": "^6.1.5",
+    "@fullcalendar/multimonth": "^6.1.5",
+    "@fullcalendar/react": "^6.1.5",
+    "@fullcalendar/timegrid": "^6.1.5",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/x-date-pickers": "^6.19.7",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@tanstack/react-table": "^8.10.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.17",
+    "@types/react-calendar": "^3.5.3",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-redux": "^7.1.25",
+    "amazon-cognito-identity-js": "^5.2.12",
+    "apexcharts": "^3.46.0",
+    "axios": "^1.6.2",
+    "better-react-mathjax": "^2.0.3",
+    "bootstrap": "^5.0.2",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.10",
+    "dynamsoft-javascript-barcode": "^9.3.0",
+    "file-saver": "^2.0.5",
+    "firebase": "^9.0.2",
+    "highcharts": "^9.3.3",
+    "highcharts-react-official": "^3.1.0",
+    "html2pdf.js": "^0.10.1",
+    "jodit-react": "^1.3.32",
+    "jspdf": "^2.5.1",
+    "jszip": "^3.10.1",
+    "mathjax-react": "^2.0.1",
+    "moment": "^2.29.3",
+    "ngrok": "^5.0.0-beta.2",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.4.1",
+    "react-big-calendar": "^1.5.2",
+    "react-bootstrap": "^2.0.0-beta.4",
+    "react-calendar": "^3.9.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-countdown-circle-timer": "^3.1.0",
+    "react-countup": "^6.4.2",
+    "react-d3-speedometer": "^1.1.0",
+    "react-date-range": "^1.4.0",
+    "react-datepicker": "^4.10.0",
+    "react-dom": "^17.0.2",
+    "react-duration-picker": "^1.1.1",
+    "react-file-drop": "^3.1.3",
+    "react-hot-toast": "^2.4.1",
+    "react-markdown": "^8.0.7",
+    "react-mobile-picker": "^1.0.0",
+    "react-pdf": "^5.1.0",
+    "react-player": "^2.12.0",
+    "react-rating": "^2.0.5",
+    "react-razorpay": "^1.1.4",
+    "react-redux": "^7.2.9",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.29.0",
+    "react-to-print": "^2.14.13",
+    "react-video-thumbnail": "^0.1.3",
+    "react-web-qr-reader": "^1.0.4",
+    "react-widgets": "^5.8.4",
+    "rehype-katex": "^6.0.3",
+    "rehype-raw": "^6.1.1",
+    "remark-math": "^5.1.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.0",
+    "use-breakpoint": "^2.0.1",
+    "use-scan-detection": "^0.2.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.development react-scripts start",
+    "start:erp": "env-cmd -f .env.development.erp react-scripts start",
+    "start:staging": "env-cmd -f .env.staging react-scripts start",
+    "build:dev": "env-cmd -f .env.development react-scripts build",
+    "build:staging": "env-cmd -f .env.staging react-scripts build",
+    "build:dps": "env-cmd -f .env.dps react-scripts build",
+    "build:erp": "env-cmd -f .env.erp react-scripts build",
+    "build": "env-cmd -f .env.production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts --fix",
+    "prettier": "prettier --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint . --ext .ts --fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/he": "^1.2.3",
+    "@types/react-animations": "^1.0.0",
+    "@types/react-big-calendar": "^0.38.2",
+    "@types/react-date-range": "^1.4.9",
+    "@types/react-datepicker": "^4.1.7",
+    "@types/react-mathjax": "^1.0.1",
+    "@types/react-pdf": "^5.7.4",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-slick": "^0.23.13",
+    "@types/styled-components": "^5.1.11",
+    "env-cmd": "^10.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "typescript": "^4.4.4"
+  },
+  "overrides": {
+    "@react-pdf/font": "2.2.0"
+  }
+}
